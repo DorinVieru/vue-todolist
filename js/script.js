@@ -15,7 +15,7 @@ createApp({
                 },
                 {
                     text: "Fare i compiti",
-                    done: true,
+                    done: false,
                 },
                 {
                     text: "Palestra",
@@ -23,7 +23,7 @@ createApp({
                 },
                 {
                     text: "Andare in posta",
-                    done: true,
+                    done: false,
                 },
                 {
                     text: "Preparare la cena per gli ospiti",
@@ -39,7 +39,12 @@ createApp({
 
     // FUNZIONI
     methods: {
-
+        removeTodo(index) {
+            let confirmation = confirm("Sei sicuro di voler cancellare questo elemento dalla tua lista?")
+            if (confirmation) {
+                this.todo_list.splice(index, 1);
+            }
+        }
     }
 
     // CHIUSURA createApp CON .MOUNT("ID")
