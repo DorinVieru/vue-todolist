@@ -44,3 +44,8 @@ li {
     background-color: rgba(199, 199, 199, 0.756);
     border-radius: 2px;
 }
+
+/* CURSOR POINTER */
+.cursor-pointer{
+    cursor: pointer;
+}
