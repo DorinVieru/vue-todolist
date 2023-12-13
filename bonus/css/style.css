@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    height: 100px;
+}
+
+img {
+    height: 100px;
+}
+
+.color-header{
+    color: #FC7455;
+}
+
+/* MAIN */
+main {
+    background-color: #FC7455;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+/* CONTAINER TODO */
+.todolist-container {
+    max-width: 750px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* LI */
+li {
+    padding: 15px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+/* SWITCH BG COLOR ON CHECK */
+.bg-grey {
+    background-color: rgba(199, 199, 199, 0.756);
+    border-radius: 2px;
+}
