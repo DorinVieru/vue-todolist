@@ -25,7 +25,7 @@
                         <!-- LOGO E TITOLO -->
                         <div class="w-100 d-flex justy-content-between align-items-center">
                             <img :src="logo" class="m-3" alt="ToDoList">
-                            <h1>TodoList</h1>
+                            <h1 class="color-header">TodoList</h1>
                         </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                         <!-- CONTAINER TODOLIST -->
                         <div class="todolist-container">
                             <!-- TITOLO -->
-                            <h1 class="text-center pt-2 mb-3">Lista da fare oggi</h1>
+                            <h1 class="text-center pt-3 my-3">Lista di cose da fare oggi</h1>
                         
                             <!-- LISTA VERA E PRORPIA -->
                             <ul class="list-unstyled">
@@ -71,6 +71,23 @@
                                     </div>
                                 </li>
                             </ul>
+
+                            <!-- SEZIONE PER AGGIUNGERE NUOVI ELEMENTI ALLA LISTA -->
+                            <div class="add-task d-flex ">
+                                <div class="container py-3 mb-3">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <!-- CAMPO INPUT -->
+                                            <input type="text" class="form-control" placeholder="Inserisci nuova task"
+                                                v-model="text_task" @keyup.enter="addTask">
+                                        </div>
+                                        <div class="col-4">
+                                            <!-- BOTTONE INVIA -->
+                                            <button class="btn btn-success float-end" @click="addTask">Aggiungi task</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

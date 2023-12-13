@@ -13,15 +13,21 @@ img {
     height: 100px;
 }
 
+.color-header{
+    color: #FC7455;
+}
+
 /* MAIN */
 main {
     background-color: #FC7455;
     height: calc(100vh - 100px);
+    overflow-y: auto;
+    margin-top: 20px;
 }
 
 /* CONTAINER TODO */
 .todolist-container {
-    max-width: 700px;
+    max-width: 750px;
     margin: 50px auto;
     background-color: white;
     border-radius: 10px;
